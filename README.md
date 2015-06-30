@@ -16,7 +16,13 @@ npm test
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var kindOfExtra = require('kind-of-extra')
+var kindof = require('kind-of-extra')
+
+kindof(123) //=> 'number'
+kindof('foo') //=> 'string'
+kindof({a: 'b'}) //=> 'object'
+kindof(new Error('foo')) //=> 'error'
+kindof(Promise.resolve(42)) //=> 'promise'
 ```
 
 
