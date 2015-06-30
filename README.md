@@ -2,7 +2,7 @@
 
 > Extends `kind-of` type check utility with support for promises, generators, streams and errors. Like `kindof(Promise.resolve(1)) === 'promise'` and etc.
 
-[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
+[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][cov-img]][cov-url] [![dependency status][david-img]][david-url]
 
 
 ## Install
@@ -40,6 +40,9 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 
 [codeclimate-url]: https://codeclimate.com/github/tunnckoCore/kind-of-extra
 [codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/kind-of-extra.svg
+
+[cov-url]: https://codeclimate.com/github/tunnckoCore/kind-of-extra
+[cov-img]: https://img.shields.io/codeclimate/coverage/github/tunnckoCore/kind-of-extra.svg
 
 [travis-url]: https://travis-ci.org/tunnckoCore/kind-of-extra
 [travis-img]: https://img.shields.io/travis/tunnckoCore/kind-of-extra.svg
