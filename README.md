@@ -26,8 +26,18 @@ kindof(Promise.resolve(42)) //=> 'promise'
 ```
 
 
-## Contributing
+## Related
+- [assert-kindof](https://github.com/tunnckoCore/assert-kindof): Check native type of the given value and throw TypeError if not okey. Expressive, elegant, behavior-driven API, good descriptive default error messages, simple and clean syntax.
+- [is-kindof](https://github.com/tunnckocore/is-kindof): Check type of given javascript value. Support promises, generators, streams, and native types. Thin wrapper around `kind-of` module.
+- [is-hybrid](https://github.com/hybridables/is-hybrid): Check whether an object looks like Hybrid which is promises-a+ promise and callback api
+- [is-promise](https://github.com/then/is-promise): Test whether an object looks like a promises-a+ promise
+- [is-ansi](https://github.com/tunnckocore/is-ansi): Check that given string contain ANSI color codes, without CLI
+- [is-hexcolor](https://github.com/tunnckocore/is-hexcolor): Check that given value is valid hex color, using `hex-color-regex` - the best regex for matching hex color values
+- [kind-of](https://github.com/jonschlinkert/kind-of): Get the native type of a value.
+- [kind-error](https://github.com/tunnckocore/kind-error): Correct inheriting from `Error`. Supports constructing from an object of properties - focused on assertion.
 
+
+## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/kind-of-extra/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
