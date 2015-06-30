@@ -1,0 +1,43 @@
+{
+  "name": "kind-of-extra",
+  "version": "0.0.0",
+  "description": "Extends `kind-of` type check utility with support for promises, generators, streams and errors. Like `kindof(Promise.resolve(1)) === 'promise'` and etc.",
+  "repository": "tunnckoCore/kind-of-extra",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "is-es6-generators": "~1.0.2",
+    "is-hybrid": "~1.0.0",
+    "is-promise": "~2.0.0",
+    "is-stream": "~1.0.1",
+    "is-typeof-error": "~1.0.0",
+    "kind-of": "~2.0.0"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "then-got": "^1.0.7",
+    "then-parse-json": "^1.0.2",
+    "through2": "^2.0.0"
+  },
+  "keywords": [
+    "check",
+    "errors",
+    "extends",
+    "extra",
+    "generators",
+    "kind",
+    "kindof",
+    "promises",
+    "streams",
+    "support",
+    "type",
+    "typeof",
+    "util",
+    "utility",
+    "validate"
+  ]
+}
