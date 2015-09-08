@@ -12,8 +12,8 @@
   "dependencies": {
     "is-es6-generators": "~1.0.2",
     "is-hybrid": "~1.0.0",
-    "is-promise": "~2.0.0",
-    "is-stream": "~1.0.1",
+    "is-node-stream": "^1.0.0",
+    "is-promise": "~2.1.0",
     "is-typeof-error": "~1.0.0",
     "kind-of": "~2.0.0"
   },

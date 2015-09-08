@@ -8,10 +8,10 @@
 'use strict'
 
 var isGens = require('is-es6-generators')
+var isStream = require('is-node-stream')
 var isError = require('is-typeof-error')
 var isPromise = require('is-promise')
 var isHybrid = require('is-hybrid')
-var isStream = require('is-stream')
 var kindOf = require('kind-of')
 
 module.exports = function kindOfExtra (val) {
