@@ -15,11 +15,11 @@
     "is-node-stream": "^1.0.0",
     "is-promise": "~2.1.0",
     "is-typeof-error": "~1.0.0",
-    "kind-of": "~2.0.0"
+    "kind-of": "~3.0.2"
   },
   "devDependencies": {
     "assertit": "^0.1.0",
-    "then-got": "^1.0.7",
+    "then-got": "^2.0.0",
     "then-parse-json": "^1.0.2",
     "through2": "^2.0.0"
   },
