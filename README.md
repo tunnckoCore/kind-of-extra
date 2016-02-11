@@ -1,8 +1,8 @@
-# kind-of-extra [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
+# [kind-of-extra][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Extends `kind-of` type check utility with support for promises, generators, streams and errors. Like `kindof(Promise.resolve(1)) === 'promise'` and etc.
+> Additional functionality to `kind-of` type check utility, support promises, generators, streams, errors. Like that `kindOf(new Error('foo')) === 'error'`.
 
-[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][cov-img]][cov-url] [![dependency status][david-img]][david-url]
+[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
 
 ## Install
@@ -15,25 +15,30 @@ npm i kind-of-extra --save
 > For more use-cases see the [tests](./test.js)
 
 ```js
-var kindof = require('kind-of-extra')
+const kindOfExtra = require('kind-of-extra')
+```
 
+### [kindOfExtra](index.js#L38)
+> Type check utility on steroids.
+
+**Params**
+
+* `val` **{Mixed}**: value to check what type is    
+* `extra` **{Boolean}**: when `false` would work as expected for `generator` and `generator function`    
+* `returns` **{String}**: type of the given `val`  
+
+**Example**
+
+```js
 kindof(123) //=> 'number'
 kindof('foo') //=> 'string'
 kindof({a: 'b'}) //=> 'object'
 kindof(new Error('foo')) //=> 'error'
 kindof(Promise.resolve(42)) //=> 'promise'
+kindof(function * () { yield 43 }) //=> 'generatorfunction'
+kindof(function * () { yield 43 }, false) //=> 'function'
+kindof((a, b) => {return a * b}) // => 'function'
 ```
-
-
-## Related
-- [assert-kindof](https://github.com/tunnckoCore/assert-kindof): Check native type of the given value and throw TypeError if not okey. Expressive, elegant, behavior-driven API, good descriptive default error messages, simple and clean syntax.
-- [is-kindof](https://github.com/tunnckocore/is-kindof): Check type of given javascript value. Support promises, generators, streams, and native types. Thin wrapper around `kind-of` module.
-- [is-hybrid](https://github.com/hybridables/is-hybrid): Check whether an object looks like Hybrid which is promises-a+ promise and callback api
-- [is-promise](https://github.com/then/is-promise): Test whether an object looks like a promises-a+ promise
-- [is-ansi](https://github.com/tunnckocore/is-ansi): Check that given string contain ANSI color codes, without CLI
-- [is-hexcolor](https://github.com/tunnckocore/is-hexcolor): Check that given value is valid hex color, using `hex-color-regex` - the best regex for matching hex color values
-- [kind-of](https://github.com/jonschlinkert/kind-of): Get the native type of a value.
-- [kind-error](https://github.com/tunnckocore/kind-error): Correct inheriting from `Error`. Supports constructing from an object of properties - focused on assertion.
 
 
 ## Contributing
@@ -49,15 +54,12 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 [npmjs-url]: https://www.npmjs.com/package/kind-of-extra
 [npmjs-img]: https://img.shields.io/npm/v/kind-of-extra.svg?label=kind-of-extra
 
-[license-url]: https://github.com/tunnckoCore/kind-of-extra/blob/master/LICENSE.md
+[license-url]: https://github.com/tunnckoCore/kind-of-extra/blob/master/LICENSE
 [license-img]: https://img.shields.io/badge/license-MIT-blue.svg
 
 
 [codeclimate-url]: https://codeclimate.com/github/tunnckoCore/kind-of-extra
 [codeclimate-img]: https://img.shields.io/codeclimate/github/tunnckoCore/kind-of-extra.svg
-
-[cov-url]: https://codeclimate.com/github/tunnckoCore/kind-of-extra
-[cov-img]: https://img.shields.io/codeclimate/coverage/github/tunnckoCore/kind-of-extra.svg
 
 [travis-url]: https://travis-ci.org/tunnckoCore/kind-of-extra
 [travis-img]: https://img.shields.io/travis/tunnckoCore/kind-of-extra.svg
