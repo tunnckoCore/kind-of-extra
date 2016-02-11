@@ -1,6 +1,6 @@
 {
   "name": "kind-of-extra",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Additional functionality to `kind-of` type check utility, support promises, generators, streams, errors. Like that `kindOf(new Error('foo')) === 'error'`.",
   "repository": "tunnckoCore/kind-of-extra",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
