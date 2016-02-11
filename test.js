@@ -54,6 +54,7 @@ test('should treat hybrid as promise when `extra: false` (not as hybrid)', funct
 
 test('should treat generator as object (as normally would) when `extra: false`', function (done) {
   var generator = (function * () {
+    /* istanbul ignore next */
     yield 55
   })()
   test.strictEqual(kindof(generator, false), 'object')
@@ -62,6 +63,7 @@ test('should treat generator as object (as normally would) when `extra: false`',
 
 test('should treat generator function as function (as normally) when `extra: false`', function (done) {
   var genFunction = function * () {
+    /* istanbul ignore next */
     yield [1, 2, 3]
   }
   test.strictEqual(kindof(genFunction, false), 'function')
