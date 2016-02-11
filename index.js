@@ -27,7 +27,7 @@ var kindOf = require('kind-of')
  * kindof(Promise.resolve(42)) // => 'promise'
  * kindof(function * () { yield 43 }) // => 'generatorfunction'
  * kindof(function * () { yield 43 }, false) // => 'function'
- * kindof((a, b) => {return a * b}) // => 'function'
+ * kindof((a, b) => { return a + b }) // => 'function'
  * ```
  *
  * @param  {Mixed} `val` value to check what type is

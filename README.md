@@ -37,7 +37,7 @@ kindof(new Error('foo')) //=> 'error'
 kindof(Promise.resolve(42)) //=> 'promise'
 kindof(function * () { yield 43 }) //=> 'generatorfunction'
 kindof(function * () { yield 43 }, false) //=> 'function'
-kindof((a, b) => {return a * b}) // => 'function'
+kindof((a, b) => { return a + b }) // => 'function'
 ```
 
 
