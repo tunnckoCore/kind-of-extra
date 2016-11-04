@@ -20,6 +20,36 @@ const kindOfExtra = require('kind-of-extra')
 
 ## API
 
+### [kindOfExtra](index.js#L42)
+> Type check utility on steroids.
+
+**Params**
+
+* `val` **{Mixed}**: value to check what type is    
+* `returns` **{String}**: type of the given `val`  
+
+**Example**
+
+```js
+var kindof = require('kind-of-extra')
+
+kindof(123) // => 'number'
+kindof('foo') // => 'string'
+kindof({a: 'b'}) // => 'object'
+kindof(null) // => 'null'
+kindof(undefined) // => 'undefined'
+kindof(false) // => 'boolean'
+kindof(true) // => 'boolean'
+kindof(new Date()) // => 'date'
+
+var through2 = require('through2')
+kindof(through2()) // => 'stream'
+kindof(new Error('foo')) // => 'error'
+kindof(Promise.resolve(42)) // => 'promise'
+kindof(function * () { yield 43 }) // => 'generatorfunction'
+kindof((a, b) => { return a + b }) // => 'function'
+```
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/kind-of-extra/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
