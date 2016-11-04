@@ -80,6 +80,26 @@
     "tasks": [
       "readme"
     ],
+    "related": {
+      "list": [
+        "kind-of-types",
+        "is-kindof",
+        "to-callback",
+        "always-done",
+        "try-catch-core",
+        "minibase",
+        "mukla"
+      ]
+    },
+    "reflinks": [
+      "always-done",
+      "async-done",
+      "base",
+      "dezalgo",
+      "kind-of",
+      "once",
+      "rfpify"
+    ],
     "lint": {
       "reflinks": true
     }
