@@ -1,3 +1,17 @@
+# Change Log
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+<a name="1.0.4"></a>
+## [1.0.4](https://github.com/tunnckocore/kind-of-extra/compare/v1.0.3...v1.0.4) (2016-11-05)
+
+
+### Bug Fixes
+
+* fix check for errors, remove check for hybrids ([82175a7](https://github.com/tunnckocore/kind-of-extra/commit/82175a7))
+
+
+
 
 
 ## 1.0.3 - 2016-02-11
